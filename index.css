@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roxborough-light", sans-serif;
+  font-weight: 100;
+}
+
+html {
+  font-size: 62.5%;
+  background: rgb(235, 234, 234);
+  color: #414141;
+}
+
+@font-face {
+  font-family: "roxborough-light";
+  src: url(./fonts/RoxboroughCF-Light.woff2);
+}
+.book {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: #414141;
+}
+.book span:hover {
+  color: #e7b10e;
+  transition: 0.4s ease;
+}
+.book svg {
+  width: 4rem;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #414141;
+}
+a:hover {
+  color: #e7b10e;
+  transition: 0.4s ease;
+}
+
+p {
+  font-size: 18px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 8rem;
+  border-bottom: 1px solid #e7b10e;
+  z-index: 1;
+  background: rgb(235, 234, 234);
+}
+header logo {
+  font-size: 3.6rem;
+  cursor: pointer;
+}
+header nav {
+  display: flex;
+  gap: 6rem;
+  height: 100%;
+}
+header .book {
+  border-left: 1px solid #e7b10e;
+  padding-left: 8rem;
+}
+
+.hero {
+  max-height: 100vh;
+  display: flex;
+  border-bottom: 1px solid #e7b10e;
+  gap: 12rem;
+}
+.hero img {
+  min-width: 36vw;
+  max-height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-right: 1px solid #e7b10e;
+}
+.hero .hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero .hero-text p span {
+  font-size: 1.4rem;
+}
+.hero .hero-text h1 {
+  width: 64%;
+  padding: 4rem 0 5rem 0;
+  font-size: 8rem;
+  text-align: left;
+}
+
+.vision-header {
+  display: flex;
+  justify-content: right;
+  height: 46vh;
+  border-bottom: 1px solid #e7b10e;
+}
+.vision-header h1 {
+  width: 60%;
+  font-size: 7rem;
+  align-self: end;
+  padding-right: 20rem;
+}
+
+.vision {
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e7b10e;
+  padding-left: 10rem;
+}
+.vision .vision-img {
+  border-left: 1px solid #e7b10e;
+}
+.vision .vision-img img {
+  max-width: 64rem;
+  max-height: 84rem;
+  padding: 4rem 0;
+  border-radius: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.vision .vision-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #e7b10e;
+  border-left: 1px solid #e7b10e;
+}
+.vision .vision-text h2 {
+  width: 56%;
+  font-size: 3rem;
+  padding: 12rem 0;
+}
+.vision .vision-text .vision-list {
+  display: flex;
+  position: relative;
+  padding: 6rem 0 6rem 0;
+}
+.vision .vision-text .vision-list div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
+}
+.vision .vision-text .vision-list .floral {
+  position: absolute;
+  background: none;
+  width: 20rem;
+  height: 20rem;
+}
+.vision .vision-text .vision-list .floral-1 {
+  transform: translate(-30%, -32%) rotate(-20deg);
+}
+.vision .vision-text .vision-list .floral-2 {
+  transform: translate(-34%, -35%) rotate(-10deg);
+}
+.vision .vision-text .vision-list .floral-3 {
+  transform: translate(-32%, -32%) rotate(-20deg);
+}
+.vision .vision-text .vision-list .circle {
+  width: 8rem;
+  height: 8rem;
+}
+.vision .vision-text .vision-list p {
+  width: 20rem;
+  padding-top: 6rem;
+}
+.vision .vision-text .vision-list p span {
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+.doctors {
+  max-height: 170vh;
+  margin-left: 18rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e7b10e;
+  border-left: 1px solid #e7b10e;
+  background-image: url(./img/blue-marble-img.jpeg);
+}
+.doctors .doctors-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 0 20rem 0;
+  gap: 12rem;
+}
+.doctors .doctors-img img {
+  width: 100%;
+}
+.doctors .doctors-img h2 {
+  font-size: 40px;
+  text-align: center;
+  padding: 2rem 0;
+}
+.doctors .doctors-img p {
+  text-align: center;
+}
+.doctors .doctors-img .doctor-1 {
+  padding-left: 2rem;
+}
+.doctors .doctors-img .doctor-2 {
+  transform: translate(0%, 30%);
+}
+.doctors .doctors-img .doctor-3 {
+  transform: translate(0%, 60%);
+  padding-right: 3rem;
+}
+.doctors .about-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 6rem;
+}
+.doctors .about-text > * {
+  width: calc(24rem + 12vw);
+  transform: translate(8%, 0%);
+}
+.doctors .about-text p {
+  padding: 10rem 0;
+}
+.doctors .about-text .about-btn {
+  padding-bottom: 6rem;
+  font-size: 30px;
+  gap: 2rem;
+}
+
+.payments {
+  max-height: 130vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem 0;
+  margin: 0 18rem;
+  border-left: 1px solid #e7b10e;
+  border-right: 1px solid #e7b10e;
+  border-bottom: 1px solid #e7b10e;
+}
+.payments .payment-text {
+  padding-right: 10rem;
+}
+.payments .payment-text h1 {
+  width: 70%;
+  font-size: 4rem;
+  padding-bottom: 6rem;
+}
+.payments .payment-text p {
+  padding-bottom: 4rem;
+}
+.payments .payment-text .payments-btn {
+  gap: 1.6rem;
+  padding-bottom: 20rem;
+}
+.payments .payment-text .payments-btn span {
+  font-size: 30px;
+}
+.payments .payment-text h2 {
+  width: 76%;
+  font-size: 4rem;
+  padding: 2rem 0 6rem 0;
+}
+.payments .payment-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 20rem 0 18rem;
+}
+.payments .payment-icons .tlc-icon {
+  padding-bottom: 20rem;
+}
+.payments .payment-icons .providers-icons {
+  width: 16rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-top: 10rem;
+}
+
+footer {
+  display: flex;
+  background: rgb(79, 119, 117);
+  color: white;
+}
+footer .left-footer {
+  padding: 10rem 20rem 4rem 10rem;
+}
+footer .left-footer h1 {
+  font-size: 4rem;
+  padding-bottom: 4rem;
+}
+footer .left-footer .visit-us {
+  font-size: 20px;
+  padding-bottom: 4rem;
+}
+footer .left-footer .address {
+  font-size: 20px;
+  padding-bottom: 8rem;
+}
+footer .left-footer .number {
+  font-size: 20px;
+  padding-bottom: 8rem;
+}
+footer .left-footer .follow {
+  font-size: 20px;
+  padding-bottom: 8rem;
+}
+footer .left-footer .follow .socials {
+  display: flex;
+  font-size: 20px;
+  gap: 2rem;
+}
+footer .left-footer .terms {
+  font-size: 20px;
+}
+footer .left-footer .terms h2 {
+  padding-bottom: 3rem;
+  font-size: 20px;
+}
+footer .right-footer {
+  padding: 10rem 10rem 4rem 20rem;
+}
+footer .right-footer h2 {
+  width: 60%;
+  font-size: 20px;
+  padding-bottom: 4rem;
+}
+footer .right-footer .services {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  padding: 4rem 0 10rem 0;
+  gap: 10rem;
+}
+footer .right-footer .services .service-title {
+  font-size: 20px;
+  padding-bottom: 2rem;
+}
+footer .right-footer .contact {
+  padding-top: 18rem;
+}
+footer .right-footer .contact .contact-img {
+  display: flex;
+  gap: 4rem;
+}
+footer .right-footer .contact .privacy-policy {
+  font-size: 16px;
+  padding-top: 3rem;
+}
+footer .right-footer .contact .privacy-policy h2 {
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 1500px) {
+  html {
+    font-size: 60%;
+  }
+  .vision-header h1 {
+    padding-right: 3rem;
+  }
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 40%;
+  }
+  header nav {
+    display: none;
+  }
+  .hero {
+    height: 60vh;
+  }
+  .vision-header {
+    height: 20vh;
+  }
+  .vision-list {
+    gap: 12rem;
+  }
+  .doctors .about-text .about-btn {
+    font-size: 24px;
+  }
+  .payments .tlc-icon img {
+    width: 26rem;
+  }
+}
+@media (max-width: 1000px) {
+  html {
+    font-size: 30%;
+  }
+  .vision-header {
+    height: 20vh;
+  }
+  .vision .vision-img {
+    display: none;
+  }
+  .vision .vision-text {
+    border-left: none;
+    border-right: none;
+  }
+  .vision .vision-list {
+    gap: 20rem;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 26%;
+  }
+  .vision-header {
+    height: 14vh;
+  }
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .hero img {
+    width: 100vw;
+    height: 40vh;
+  }
+}/*# sourceMappingURL=index.css.map */
